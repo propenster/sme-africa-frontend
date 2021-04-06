@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SmeAfrica - Your easiest access to SME Loans and Credits</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css"> -->
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton:400,500,600,700,800&display=swap');
+
+:root {
+    --main-accent-color: #03bad5;
+    --section-title-color-dark: #37474f;
+    --body-color: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 800;
+}
+
+.btn-white {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+}
+
+/* Section title */
+.section-title {
+    position: relative;
+}
+
+h2.section-title-heading {
+    color: var(--section-title-color-dark);
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--main-accent-color);
+    width: 8%;
+    top: 80px;
+}
+
+.section-title:hover::after {
+    width: 12%;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+
+}
+
+
+
+/* ============ NAVIGATION =============== */
+
+.navbar {
+    padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #27778b;
+}
+
+.navbar.active {
+    background-color: rgba(0,172,217, 0.7);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-brand{
+    font-family: 'Anton', sans-serif;
+    font-weight: 780;
+}
+#brandlogo{
+    color: #f7f7f7;
+}
+
+
+/* ============ HERO =============== */
+
+#hero {
+    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url('https://nasmelagoschapter.com/wp-content/uploads/2020/11/51b5a918d075d3763e8754128c8b7d19.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.main-hero-content h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+}
+
+.main-hero-content p {
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.image-box img {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+}
+
+/* ============ ABOUT =============== */
+
+#about i {
+    color: var(--main-accent-color);
+}
+
+#login h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#login p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#login {
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+#login::after {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+}
+
+/* ============ FEATURES =============== */
+
+#features {
+    background-color: #fafafa;
+    padding-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+#features img {
+    display: block;
+    margin: 0 auto;
+}
+
+#features .feature-block {
+    text-align: center;
+}
+
+#features .feature-block h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#features .feature-block img {
+    padding-bottom: 1rem;
+}
+
+#features .feature-block p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+/* ============ DOWNLOAD =============== */
+
+#download {
+    background-image: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52)), url(../../assets/img/download.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+    position: relative;
+}
+
+#download::before {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -6rem;
+    right: 0;
+    left: 0;
+}
+
+#download .download-title h2 {
+    padding-top: 10rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+#download .download-title p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-top: 2.5rem;
+}
+
+#download .download-title .download-btns {
+    margin-top: 4rem;
+}
+
+#download .download-title .download-btns a {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+
+#download .download-title .download-btns a:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+    text-decoration: none;
+}
+
+
+/* ============ PRICING =============== */
+
+#pricing {
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+#pricing::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -6rem;
+    right: 0;
+    left: 0;
+}
+
+#pricing .section-title {
+    margin-bottom: 5rem;
+}
+
+#pricing .pricing-table {
+    background-color: #ffffff;
+    box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    -webkit-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    -moz-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    -o-box-shadow: -1px 0px 12px 4px rgba(0,0,0, 0.24);
+    margin-right: 1rem;
+    width: calc(90% / 3);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#pricing .pricing-table .table-header h4 {
+    color: var(--section-title-color-dark);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#pricing .pricing-table .table-content {
+    margin-top: 2rem;
+}
+
+#pricing .pricing-table .table-content ul li {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+#pricing .pricing-table .table-footer {
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+#pricing .pricing-table .table-footer a {
+    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#pricing .pricing-table .table-footer a:hover {
+    text-decoration: none;
+    background: #ffffff;
+    color: rgba(0,172,217, 0.62);
+    border: 2px solid rgba(0,172,217, 0.62);
+}
+
+#pricing .table-header {
+    margin: 0;
+    width: 100%;
+}
+
+#pricing .pricing-table .table-header {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header {
+    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: #ffffff;
+    position: relative;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+#pricing .pricing-table:nth-child(2) .table-header h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* ============ Contact =============== */
+#contact {
+    background-color: #f0f1f3;
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -6rem;
+    right: 0;
+    left: 0;
+}
+
+.btn-contact {
+    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    padding: .5rem 2.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-contact:hover {
+    background: #ffffff;
+    color: rgba(0,172,217, 0.62);
+    border: 2px solid rgba(0,172,217, 0.62);
+}
+
+#contact .contact-details ul li {
+    padding-bottom: .8rem;
+}
+
+#contact .contact-details ul li i {
+    color: rgba(0,172,217, 0.62);
+}
+
+/* ============ Footer =============== */
+#footer {
+    background-color: #2b323f;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+#footer::before {
+    content: '';
+    position: absolute;
+    background-color: #2b323f;
+    width: 100%;
+    height: 45%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -5.5rem;
+    right: 0;
+    left: 0;
+}
+
+#footer .footer-logo img {
+    margin-top: -4.5rem;
+}
+
+#footer .social-icons {
+    margin-top: -1rem;
+}
+
+#footer .social-icons a {
+    margin-right: 10px;
+    color: #8d8c8c;
+}
+
+.copyright p {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: .9rem;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#" id="brandlogo">SmeAfrica</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">features</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pricings">pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact</a>
+                  </li>
+
+
+              </ul>
+              <ul class="navbar-nav " *ngIf="!isLoggedIn">
+                    <li class="nav-item float-right">
+                            <a class="nav-link" routerLink="/login">login</a>
+                    </li>
+                    <li class="nav-item float-right">
+                            <a class="nav-link" routerLink="/signup">Signup </a>
+                    </li>
+              </ul>
+              <ul class="navbar-nav o" *ngIf="isLoggedIn">
+                  <li class="nav-item">
+                    <a href="/profile" class="nav-link" routerLink="/profile">{{ username }}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href class="nav-link" (click)="logout()">LogOut</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+          </nav>
+    </header>
+
+
+    <!-- Hero section -->
+    <section id="hero">
+
+        <div class="container">
+
+            <div class="row main-hero-content">
+
+                    <div class="col-md-6">
+                        <h1>ACCESS TO SME LOANS NOW EASIER AND FASTER THAN EVER</h1>
+                        <p>You only focus on building a great business, we provide the footing needed. Obtain low-interest SME Loans (Credits) in minutes.</p>
+                        <div class="hero-buttons">
+                            <a routerLink="/signup" class="btn btn-outline-primary btn-white">Start today</a>
+                            <a href="#" class="btn btn-outline-primary btn-white">More info </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-box">
+                            <!--<img src="assets/img/device.png" class="img-fluid" alt="">-->
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="login">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <h3 class="section-title-heading">Sign in</h3>
+        </div>
+        <div class="row justify-content-center">
+        <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form class="form" *ngIf="!isLoggedIn"
+                name="form"
+                (ngSubmit)="f.form.valid && onSubmit()"
+                #f="ngForm"
+                novalidate
+                >
+                <div class="form-group">
+                  <label for="username" style="font-weight: bold; color: #03bad5;">Username</label>
+                  <input type="text" class="form-control" style="height: 2.5rem;" placeholder="Enter username..." id="username" name="username"
+                  [(ngModel)]="form.username"
+                  required
+                  #username="ngModel"
+                  />
+                  <div
+                      class="alert alert-danger mt-1"
+                      role="alert"
+                      *ngIf="f.submitted && username.invalid"
+                    >
+                      Username is required!
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="username" style="font-weight: bold; color: #03bad5;">Password</label>
+                  <input type="password" class="form-control" style="height: 2.5rem;" placeholder="" id="password" name="password"
+                  name="password"
+                  [(ngModel)]="form.password"
+                  required
+                  minlength="6"
+                  #password="ngModel"
+
+                  />
+                    <div
+                      class="alert alert-danger mt-1"
+                      role="alert"
+                      *ngIf="f.submitted && password.invalid"
+                    >
+                      <div *ngIf="password.errors.required">Password is required</div>
+                      <div *ngIf="password.errors.minlength">
+                        Password must be at least 6 characters
+                      </div>
+                    </div>
+                </div>
+                <!--<div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" placeholder="Enter username..." id="username" name="username"/>
+                </div>-->
+                <p class="mb-1">Don't have an account yet? <a routerLink="signup">Signup</a> here</p>
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-block">
+                      Sign in
+                    </button>
+                  </div>
+                  <div class="form-group">
+                    <div
+                      class="alert alert-danger"
+                      role="alert"
+                      *ngIf="f.submitted && isLoginFailed"
+                    >
+                      Login failed: {{ errorMessage }}
+                    </div>
+                  </div>
+              </form>
+              <div class="alert alert-success" *ngIf="isLoggedIn">
+                Logged in as {{ roles }}.
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Download section -->
+    <section id="download" >
+
+        <div class="container">
+
+                <div class="row download-title justify-content-center">
+                    <h2>download our app</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae illum asperiores deleniti. Facere, possimus
+                        architecto necessitatibus alias veritatis aperiam eius quibusdam vel ducimus fuga
+                        delectus, velit, temporibus consequatur voluptatibus a.</p>
+                    <div class="download-btns">
+                        <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                        <a href="#"><i class="fab fa-android"></i> Play Store</a>
+                    </div>
+                </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pricing section -->
+    <section id="pricing">
+
+        <div class="container">
+
+            <div class="row section-title justify-content-center">
+                <h2 class="section-title-heading">pricing plans</h2>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md pricing-table">
+
+                    <div class="table-header text-center">
+                        <h4>basic</h4>
+                        <p>$25/month</p>
+                    </div>
+
+                    <div class="table-content">
+                        <ul>
+                            <li>free support</li>
+                            <li>20gb storage</li>
+                            <li>2 users</li>
+                            <li>2 email accounts</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-footer text-center">
+                        <a href="#">order now</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md pricing-table">
+
+                    <div class="table-header text-center">
+                        <h4>medium</h4>
+                        <p>$45/month</p>
+                        <img src="assets/img/sale-badge.png" alt="">
+                    </div>
+
+                    <div class="table-content">
+                        <ul>
+                            <li>free support</li>
+                            <li>20gb storage</li>
+                            <li>2 users</li>
+                            <li>2 email accounts</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-footer text-center">
+                        <a href="#">order now</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md pricing-table">
+
+                    <div class="table-header text-center">
+                        <h4>large</h4>
+                        <p>$125/month</p>
+                    </div>
+
+                    <div class="table-content">
+                        <ul>
+                            <li>free support</li>
+                            <li>20gb storage</li>
+                            <li>2 users</li>
+                            <li>2 email accounts</li>
+                        </ul>
+                    </div>
+
+                    <div class="table-footer text-center">
+                        <a href="#">order now</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact section -->
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="row section-title justify-content-center">
+                <h2 class="section-title-heading">get in touch</h2>
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter your name">
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <textarea class="form-control" rows="10" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-contact mt-4">Send</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="address">
+                        <h3>Address</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus quae ea nihil
+                            tempora nemo voluptatum praesentium soluta nam?</p>
+                    </div>
+                    <div class="contact-details">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-mobile-alt"></i></span>+1 555 555 555</li>
+                            <li><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>272 Private 7530 Rd, Call, TX, 75933</li>
+                            <li><span class="fa-li"><i class="fas fa-paper-plane"></i></span>info@yourcompany.com</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer section -->
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row d-flex flex-column align-items-center">
+
+                <div class="footer-logo">
+                     <a class="navbar-brand mb-4" href="#" id="brandlogo">SmeAfrica</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="copyright text-center">
+                    <p>Copyright 2020</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+</body>
+</html>
+

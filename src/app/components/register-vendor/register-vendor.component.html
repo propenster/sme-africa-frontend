@@ -1,0 +1,41 @@
+<mat-card>
+
+
+<form [formGroup]="entryForm" (ngSubmit)="onSubmit()" class="new-entry-form">
+  <h2>Register new vendor</h2>
+  <mat-form-field class="new-entry-field" >
+    <input matInput placeholder="Enter your name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field class="new-entry-field" >
+    <input type="phone" matInput placeholder="Enter your phone number" formControlName="phone">
+  </mat-form-field>
+
+  <mat-form-field class="new-entry-field" >
+    <input type="email" matInput placeholder="Enter your email" formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field class="new-entry-field" >
+    <mat-select placeholder="Location" formControlName="location">
+      <mat-option *ngFor="let location of locations" [value]="location.name">
+        {{ location.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="new-entry-field" >
+    <input matInput placeholder="Entry imageUrl" formControlName="imageUrl">
+  </mat-form-field>
+
+  <p>
+Accept terms and conditions?
+See terms <a routerLink="/">here</a>
+</p>
+
+
+<button mat-raised-button class="new-form-btn" [disabled]="!entryForm.valid">Create new</button>
+
+
+</form>
+
+</mat-card>
